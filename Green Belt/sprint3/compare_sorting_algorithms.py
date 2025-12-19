@@ -12,7 +12,7 @@ def timeStamp():
 
 
 
-list = randList(10000,0,100)
+list = randList(10000 ,0,100)
 
 
 def selection_sort():
