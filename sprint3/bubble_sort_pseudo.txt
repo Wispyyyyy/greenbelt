@@ -1,0 +1,14 @@
+start
+
+define list
+
+
+for i in range (len(list))
+    for j in range(len(list) - 1)
+    check if i-1 > i:
+    if yes, swap 
+    else
+    don't swap
+
+
+end

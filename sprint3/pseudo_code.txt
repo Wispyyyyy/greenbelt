@@ -1,0 +1,15 @@
+start
+
+assign string to "Peter"
+break Peter into a list make all lowercase--> lower["p", "e", "t", "e", "r"]
+set variable for P
+set variable to e
+set variable to t
+set variable to r
+
+go through the list using for loop
+use a switch statement to check if the letter is one of the cases p, e, t, or r.
+if it is, add one to that letters variable count.
+repeat.
+
+end

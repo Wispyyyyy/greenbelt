@@ -1,0 +1,19 @@
+start
+
+define list = [4, 3, 2, 1]
+
+
+for i in range length of list
+
+min_index = i
+
+for j in range length of i+1 to length of list
+
+
+
+check if list[min_index] is greater than than list[j]
+if it is, swap
+increase current position by one
+
+
+end
