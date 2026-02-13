@@ -1,11 +1,11 @@
 list = [100, 24, 16, 19, 54, 2, 191, 191, 1, -5, 500, 987, 0]
 
 length = len(list - 1)
-
+# merge sort
 def merge(arr, l, m, r):
     n1 = m - l + 1
     n2 = r - m
-
+#comment
     L = [0] * (n1)
     R = [0] * (n2)
 
