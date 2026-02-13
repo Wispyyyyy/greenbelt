@@ -1,3 +1,5 @@
+import random
+
 def randList(size, bottom, top):
     rand_list = []
     for i in range(size):
