@@ -113,18 +113,38 @@ class Wizard(VideoGameCharacter):
     def attack(self):
         super().attack()
         print(f"{self.name} casts a spell!")
+    def revealHealth(self):
+        print(self._VideoGameCharacter__health)
+
+class iceWizard(Wizard): # child of a child.
+    def move(self):
+        print(f"{self.name} clones and is now in multiple locations.")
+    def attack(self):
+        # super().attack() #1 (overidden)
+        # print(f"{self.name} casts a spell!") #2
+        print(f"{self.name}'s attack causes you to freeze.") #3
+    def revealHealth(self):
+        print(self._VideoGameCharacter__health)
+
+
+
+#_________________________NOT CLASS________________________________
 
 steve = VideoGameCharacter("Steve", 67, 67, ["luck", "regeneration", "cunning"], 5, (67, 67, 67))
 # steve.health=10
 # steve.position = (10, 5) # should error
-steve.describeCharacter()
+# steve.describeCharacter()
 
 bobby = Warrior("Bobby", 10, 100, None, 10, (10, 10, 10))
 
 robert = Wizard("Robert", 100, 1000, None, 10, (0, 0, 0))
+icebert = iceWizard("Icebert")
+icebert.revealHealth()
+# icebert.describeCharacter()
+robert.revealHealth()
 
-bobby.describeCharacter()
-robert.describeCharacter()
+# bobby.describeCharacter()
+# robert.describeCharacter()
 # bobby.move()
 # robert.move()
 # bobby.attack()
@@ -132,10 +152,10 @@ robert.describeCharacter()
 
 characters = [steve, bobby, robert]
 
-def groupAttack(chars):
-    for i in characters:
-        i.attack()
-groupAttack(characters)
+# def groupAttack(chars):
+#     for i in characters:
+#         i.attack()
+# groupAttack(characters)
     
 
 
